@@ -1,0 +1,10 @@
+{
+  "$schema": "../architect/src/builders-schema.json",
+  "builders": {
+    "run": {
+      "class": "./src/run",
+      "schema": "./src/run/schema.json",
+      "description": "Run a script using nodemon"
+    }
+  }
+}

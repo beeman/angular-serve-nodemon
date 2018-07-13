@@ -1,0 +1,35 @@
+{
+  "title": "nodemon runner",
+  "description": "nodemon runner options for Build Architect.",
+  "type": "object",
+  "properties": {
+    "script": {
+      "type": "string",
+      "description": "The file path of the TypeScript script to start"
+    },
+    "tsConfig": {
+      "type": "string",
+      "description": "The file path of the TypeScript configuration file."
+    },
+    "ext": {
+      "type": "string",
+      "description": "Comma-separated list of extensions to watch (default: ts,json)"
+    },
+    "ignore": {
+      "type": "array",
+      "description": "And array of directory paths to ignore."
+    },
+    "watch": {
+      "type": "array",
+      "description": "And array of directory paths to watch."
+    },
+    "verbose": {
+      "type": "boolean",
+      "description": "Run nodemon in verbose mode"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "script", "tsConfig"
+  ]
+}
